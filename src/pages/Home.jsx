@@ -19,6 +19,8 @@ const Home = () => {
 
           <div className="hero-visual">
 
+            
+
 
             <div className="hero-image-wrapper">
 
