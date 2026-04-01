@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import { HiOutlineSearch, HiOutlineShoppingBag } from 'react-icons/hi'
 import { SlSocialFacebook, SlSocialInstagram, SlSocialTwitter, SlSocialYoutube } from 'react-icons/sl'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import Menu from './pages/Menu'
 
 
 const App = () => {
@@ -109,7 +110,7 @@ const App = () => {
 
 
 
-        <Home />
+        <Menu />
 
 
 
