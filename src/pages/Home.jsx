@@ -45,6 +45,28 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+      <section className="hot-offer-container">
+        <div className="ticket-strip">
+          <div className="ticket-content">
+            <h2 className="ticket-text">Savor the Savings on Your Favorite Dishes!</h2>
+            <h1 className="ticket-perc">15%</h1>
+          </div>
+
+          {/* The cutouts are handled via CSS masking on the ticket-strip */}
+
+          <div className="ticket-image-wrap">
+            <img src="src\assets\images\2148140194 2.png" alt="food" className="food-img" />
+          </div>
+        </div>
+
+        <div className="pepper-decoration">
+          <img src="src\assets\images\0c87f7620fea49336e5b75121d2f10b4d765379e (1).png" alt="pepper" />
+        </div>
+      </section>
+
+
     </>
   )
 }

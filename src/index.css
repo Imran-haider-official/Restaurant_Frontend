@@ -86,7 +86,7 @@ body {
     height: 500px;
     margin: 0 auto;
     background: url('src/assets/images/4069 3 (1).png');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .customer-review {
-     bottom: 0%;
+    bottom: 0%;
     left: 279px;
     background-color: #ED9D08;
 }
@@ -232,50 +232,128 @@ body {
     }
 }
 
+/* hot offer strip styling */
+.hot-offer-container {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    /* Main page background */
+}
+
+.ticket-strip {
+    display: flex;
+    align-items: center;
+    background-color: #d32f2f;
+    /* Red color */
+    color: white;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    min-height: 200px;
+    padding-left: 40px;
+
+    /* This creates the circular cutouts using a radial gradient mask */
+    mask-image: radial-gradient(circle at 75% 0%, transparent 25px, black 26px),
+        radial-gradient(circle at 75% 100%, transparent 25px, black 26px);
+    mask-composite: intersect;
+    -webkit-mask-image: radial-gradient(circle at 75% 0%, transparent 25px, black 26px),
+        radial-gradient(circle at 75% 100%, transparent 25px, black 26px);
+    -webkit-mask-composite: source-in;
+    /* Standard composite varies by browser */
+}
+
+.ticket-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 75%;
+    /* Aligning with the cutout position */
+}
+
+.ticket-text {
+    font-size: 1.5rem;
+    max-width: 250px;
+}
+
+.ticket-perc {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    left: -20px;
+}
+
+.ticket-image-wrap {
+    position: absolute;
+    right: -80px;
+    /* Overlaps the edge of the red div */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.food-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.pepper-decoration {
+    margin-left: auto;
+    /* Pushes the pepper to the far right */
+    margin-right: -250px;
+    
+
+}
+
 /* footer icons styling */
 
 
+
 .social-footer {
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff; /* Or your footer background */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    /* Or your footer background */
 }
 
 .social-container {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .social-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  /* Circle Styling */
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
- 
-  /* The Shadow - subtle and spread out */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
- 
-  /* Icon Styling */
-  color: #ff3b30; /* That vibrant red from your image */
-  font-size: 24px;
-  transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Circle Styling */
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+
+    /* The Shadow - subtle and spread out */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    /* Icon Styling */
+    color: #ff3b30;
+    /* That vibrant red from your image */
+    font-size: 24px;
+    transition: all 0.3s ease;
 }
 
 /* Hover Effects */
 .social-circle:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  color: #d32f2f; /* Darkens slightly on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    color: #d32f2f;
+    /* Darkens slightly on hover */
 }
 
 /* Fix for SVG sizing */
 .social-circle svg {
-  stroke-width: 1.5; /* Makes icons look thinner/more like the image */
+    stroke-width: 1.5;
+    /* Makes icons look thinner/more like the image */
 }
