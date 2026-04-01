@@ -1,0 +1,228 @@
+@import 'tailwindcss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Pages {
+    flex-grow: 1;
+}
+
+.nav_wrapper {
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+
+}
+
+.nav_links {
+    width: 500px;
+}
+
+.nav_links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+
+}
+
+.nav_links ul a {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+
+}
+
+
+
+.nav_action {
+    display: flex;
+    gap: 3rem;
+}
+
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    position: sticky;
+
+    bottom: 0;
+
+}
+
+
+.footer_links {
+    display: flex;
+    gap: 2rem;
+
+
+}
+
+
+/* hero styling */
+
+/* 1. Create the container */
+.hero-image-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.hero-image-wrapper svg {
+    width: 100%;
+}
+
+/* 2. Style the badges */
+.badge {
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Position each one individually */
+.fast-delivery {
+    top: 5%;
+    left: 0;
+    background-color: #005A50;
+}
+
+.nearest-place {
+    top: 15%;
+    right: 0;
+    background-color: #A3CC81;
+}
+
+.book-table {
+    bottom: 30%;
+    left: -20px;
+    /* This makes it pop out slightly more */
+    background-color: #FF4D3D;
+}
+
+.customer-review {
+     bottom: 0%;
+    left: 279px;
+    background-color: #ED9D08;
+}
+
+/* 1. Variables for easy updates */
+:root {
+    --primary-green: #007A59;
+    --primary-red: #FF4033;
+    --text-dark: #1a1a1a;
+    --text-gray: #666666;
+}
+
+/* 2. Layout */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    min-height: 80vh;
+    gap: 40px;
+}
+
+/* 3. Typography */
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+    /* Tight kerning for that premium look */
+}
+
+.hero-text .highlight {
+    color: var(--primary-red);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* 4. Buttons */
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 50px;
+    /* Fully rounded */
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-filled {
+    background-color: var(--primary-green);
+    color: white;
+    border: 2px solid var(--primary-green);
+}
+
+.btn-filled:hover {
+    background-color: #005a42;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 122, 89, 0.2);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-red);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Responsive fix */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+}
