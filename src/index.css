@@ -231,3 +231,51 @@ body {
         justify-content: center;
     }
 }
+
+/* footer icons styling */
+
+
+.social-footer {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; /* Or your footer background */
+}
+
+.social-container {
+  display: flex;
+  gap: 20px;
+}
+
+.social-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  /* Circle Styling */
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+ 
+  /* The Shadow - subtle and spread out */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+ 
+  /* Icon Styling */
+  color: #ff3b30; /* That vibrant red from your image */
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.social-circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  color: #d32f2f; /* Darkens slightly on hover */
+}
+
+/* Fix for SVG sizing */
+.social-circle svg {
+  stroke-width: 1.5; /* Makes icons look thinner/more like the image */
+}

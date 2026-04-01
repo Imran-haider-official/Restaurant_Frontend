@@ -1,5 +1,9 @@
 import React from 'react'
 import Home from './pages/Home'
+import { HiOutlineSearch, HiOutlineShoppingBag } from 'react-icons/hi'
+import { SlSocialFacebook, SlSocialInstagram, SlSocialTwitter, SlSocialYoutube } from 'react-icons/sl'
+import { IoLogoWhatsapp } from 'react-icons/io'
+
 
 const App = () => {
   return (
@@ -8,7 +12,7 @@ const App = () => {
       <header>
         <nav className="nav_wrapper">
           <div className="logo">
-              <svg width="162" height="45" viewBox="0 0 162 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="162" height="45" viewBox="0 0 162 45" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M20.0041 7.25246C20.0041 7.25246 20.2252 6.2456 17.1239 6.27847C14.1272 6.30834 5.73179 8.05615 1.40558 17.6676C1.40558 17.6676 -1.8062 25.1518 1.48028 32.161C4.76676 39.1701 11.6773 43.2573 17.8201 44.303C33.885 47.0398 40.7507 34.0134 40.9867 26.7532C41.1899 20.5866 37.9751 14.7665 35.2742 12.4481C35.2742 12.4481 33.5922 10.6405 33.0753 11.3068C32.5793 11.9461 37.6495 18.9852 35.6119 21.0079C34.0971 22.5107 31.1871 18.4594 28.8566 18.8119C26.1677 19.2182 25.1429 25.6089 21.9521 24.9038C18.5401 24.148 20.9661 17.4525 19.9413 16.0722C18.6835 14.3781 12.9979 15.4836 12.2958 13.7597C10.8916 10.3208 20.1415 8.337 20.0041 7.24947V7.25246Z"
                 fill="#FF4033" />
@@ -93,8 +97,8 @@ const App = () => {
           </div>
 
           <div className="nav_action">
-            <div><span> <faSearch/> </span></div>
-            <div><span> <faShoppingBag/> </span></div>
+            <div><span> <HiOutlineSearch size={24} /> </span></div>
+            <div><span> <HiOutlineShoppingBag size={24} /> </span></div>
           </div>
         </nav>
       </header>
@@ -104,8 +108,8 @@ const App = () => {
       <div className="Pages">
 
 
-        
-        <Home/>
+
+        <Home />
 
 
 
@@ -178,13 +182,39 @@ const App = () => {
           </div>
 
           <div className="footer_links">
-            <div><span><i className="fa-brands fa-facebook"></i></span></div>
-            <div><span><i className="fa-brands fa-youtube"></i></span></div>
-            <div><span><i className="fa-brands fa-whatsapp"></i></span></div>
-            <div><span><i className="fa-brands fa-instagram"></i></span></div>
+
+            <div className="social-container">
+
+              <a href="#" className="social-circle">
+
+                <SlSocialFacebook />
+
+              </a>
+
+              <a href="#" className="social-circle">
+
+                <SlSocialYoutube />
+
+              </a>
+
+              <a href="#" className="social-circle">
+
+                <SlSocialTwitter />
+
+              </a>
+
+              <a href="#" className="social-circle">
 
 
+                <IoLogoWhatsapp />
+              </a>
 
+              <a href="#" className="social-circle">
+
+                <SlSocialInstagram />
+              </a>
+
+            </div>
           </div>
         </div>
 
